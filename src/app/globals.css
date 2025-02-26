@@ -12,3 +12,20 @@ h1{
 body{
   background-color: black;
 }
+
+h2{
+  color: green;
+}
+
+.row{
+  padding: 1em;
+  border: 1px solid red;
+  border-color: aqua;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
