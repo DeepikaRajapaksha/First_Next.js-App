@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link"
+import img1 from "../../public/img1.jpg"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <li><Link href="/products" className={styles.Link}>Products</Link></li>
       <li><Link href="/about/carrers" className={styles.Link}>Carrers Page </Link></li>
       <li><Link href="/contact" className={styles.Link}>Contact us</Link></li>
+      <li><Link href="/Image" className={styles.Link}>Image Page</Link></li>
 
       <li><Link href="https://nextjs.org/" target="_blank" id={styles.specialLink}>NextJS Site</Link></li>
 
@@ -20,6 +22,20 @@ export default function Home() {
     </ul>
     </div>
     
+    <h1>Image Component</h1>
+    
+    <Image src={img1}
+    alt="sample img"
+    style={{width: "100%", objectFit:"cover"}}
+    />
+
+    <Image src={"https://hips.hearstapps.com/hmg-prod/images/spring-flowers-65de4a13478ee.jpg?crop=0.668xw:1.00xh;0.287xw,0&resize=640:*"}
+    alt="sample img"
+    width={1000}
+    height={1000}
+    
+    />
+
     </>
     
   )
