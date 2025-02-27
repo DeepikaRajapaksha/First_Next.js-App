@@ -29,3 +29,8 @@ h2{
   justify-content: space-between;
   min-height: 100vh;
 }
+
+.imgcont{
+  width: 100%;
+  object-fit:cover;
+}
